@@ -24,9 +24,9 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/e9bd827f-6609-4362-8087-eac3a6a65bb7.png" 
+                src="/lovable-uploads/66522418-2d3f-4f95-ad3f-5610e03d8c27.png" 
                 alt="Rise Up Academy" 
-                className="h-10 w-auto"
+                className="h-12 w-auto md:h-14"
               />
             </div>
 
