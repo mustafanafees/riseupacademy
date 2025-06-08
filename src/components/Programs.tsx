@@ -1,7 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { BookOpen, Clock, Users, Target } from "lucide-react";
 
 const Programs = () => {
@@ -10,28 +9,24 @@ const Programs = () => {
       grade: "IX",
       title: "Class 9",
       description: "Foundation building with comprehensive curriculum coverage",
-      features: ["All Subjects", "Regular Tests", "Individual Attention"],
       color: "bg-primary"
     },
     {
       grade: "X",
       title: "Class 10", 
       description: "Board exam preparation with focused learning approach",
-      features: ["Board Prep", "Mock Exams", "Result Oriented"],
       color: "bg-navy"
     },
     {
       grade: "XI",
       title: "Class 11",
       description: "Pre-engineering and pre-medical track specialization",
-      features: ["Track Selection", "Advanced Topics", "Career Guidance"],
       color: "bg-accent"
     },
     {
       grade: "XII",
       title: "Class 12",
       description: "Final year excellence with university entrance preparation",
-      features: ["University Prep", "Entry Tests", "Career Counseling"],
       color: "bg-primary"
     }
   ];
@@ -91,13 +86,6 @@ const Programs = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">{program.description}</p>
-                <div className="space-y-2">
-                  {program.features.map((feature, idx) => (
-                    <Badge key={idx} variant="secondary" className="mr-2">
-                      {feature}
-                    </Badge>
-                  ))}
-                </div>
               </CardContent>
             </Card>
           ))}
@@ -114,13 +102,6 @@ const Programs = () => {
               <p className="text-sm text-muted-foreground">{feature.description}</p>
             </div>
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-            View Detailed Curriculum
-          </Button>
         </div>
       </div>
     </section>

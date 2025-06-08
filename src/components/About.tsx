@@ -1,16 +1,9 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Award, Users, Clock } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 const About = () => {
-  const achievements = [
-    { number: "100%", label: "Success Rate", icon: Award },
-    { number: "500+", label: "Students", icon: Users },
-    { number: "5+", label: "Years Experience", icon: Clock },
-    { number: "15:1", label: "Student-Teacher Ratio", icon: CheckCircle }
-  ];
-
   const features = [
     "Result Oriented Faculty",
     "Small Batches",
@@ -51,19 +44,6 @@ const About = () => {
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-sm font-medium">{feature}</span>
                 </div>
-              ))}
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {achievements.map((stat, index) => (
-                <Card key={index} className="text-center border-primary/20">
-                  <CardContent className="pt-6">
-                    <stat.icon className="h-6 w-6 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-navy">{stat.number}</div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
-                  </CardContent>
-                </Card>
               ))}
             </div>
           </div>

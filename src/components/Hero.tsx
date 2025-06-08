@@ -34,22 +34,6 @@ const Hero = () => {
                 Learn More
               </Button>
             </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary mb-1">25%</div>
-                <div className="text-sm text-muted-foreground">Discount</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary mb-1">4</div>
-                <div className="text-sm text-muted-foreground">Classes</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary mb-1">100%</div>
-                <div className="text-sm text-muted-foreground">Success Rate</div>
-              </div>
-            </div>
           </div>
 
           {/* Right Content */}

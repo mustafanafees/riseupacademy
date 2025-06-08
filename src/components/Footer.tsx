@@ -16,8 +16,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-navy-foreground/80 mb-4">
-              Unlock Your Potential, Unleash Your Success. Quality education 
-              for classes IX, X, XI, XII in Karachi.
+              Unlock Your Potential, Unleash Your Success.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-navy-foreground/60 hover:text-accent transition-colors">
