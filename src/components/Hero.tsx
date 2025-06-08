@@ -56,8 +56,8 @@ const Hero = () => {
           <div className="relative animate-slide-up">
             <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-8">
               <img 
-                src="/lovable-uploads/2ce5bc38-03f6-4038-9662-633ba35b3beb.png" 
-                alt="Rise Up Academy - Educational Excellence" 
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                alt="Students studying in classroom - Rise Up Academy" 
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
               
