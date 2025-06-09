@@ -21,8 +21,8 @@ const HeroCarousel = () => {
       alt: "Classic classroom interior with blackboard and student desks"
     },
     {
-      src: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
-      alt: "Modern classroom with whiteboard and arranged desks"
+      src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
+      alt: "University lecture hall with rows of seats and podium"
     }
   ];
 
