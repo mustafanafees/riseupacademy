@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Star, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import HeroCarousel from "./HeroCarousel";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -57,28 +58,22 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content */}
+          {/* Right Content - Carousel */}
           <div className="relative animate-slide-up order-1 lg:order-2">
-            <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-6 lg:p-8">
-              <img 
-                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Students studying in classroom - Rise Up Academy" 
-                className="w-full h-auto rounded-2xl shadow-lg"
-              />
-              
-              {/* Floating Cards */}
-              <div className="absolute -top-2 -left-2 lg:-top-4 lg:-left-4 bg-white rounded-lg shadow-lg p-3 lg:p-4 border animate-bounce">
-                <div className="flex items-center space-x-2">
-                  <Star className="h-4 w-4 lg:h-5 lg:w-5 text-accent fill-accent" />
-                  <span className="font-semibold text-xs lg:text-sm">Result Oriented</span>
-                </div>
+            <HeroCarousel />
+            
+            {/* Floating Cards */}
+            <div className="absolute -top-2 -left-2 lg:-top-4 lg:-left-4 bg-white rounded-lg shadow-lg p-3 lg:p-4 border animate-bounce">
+              <div className="flex items-center space-x-2">
+                <Star className="h-4 w-4 lg:h-5 lg:w-5 text-accent fill-accent" />
+                <span className="font-semibold text-xs lg:text-sm">Result Oriented</span>
               </div>
-              
-              <div className="absolute -bottom-2 -right-2 lg:-bottom-4 lg:-right-4 bg-white rounded-lg shadow-lg p-3 lg:p-4 border animate-bounce" style={{ animationDelay: '0.5s' }}>
-                <div className="flex items-center space-x-2">
-                  <Users className="h-4 w-4 lg:h-5 lg:w-5 text-primary" />
-                  <span className="font-semibold text-xs lg:text-sm">Small Batches</span>
-                </div>
+            </div>
+            
+            <div className="absolute -bottom-2 -right-2 lg:-bottom-4 lg:-right-4 bg-white rounded-lg shadow-lg p-3 lg:p-4 border animate-bounce" style={{ animationDelay: '0.5s' }}>
+              <div className="flex items-center space-x-2">
+                <Users className="h-4 w-4 lg:h-5 lg:w-5 text-primary" />
+                <span className="font-semibold text-xs lg:text-sm">Small Batches</span>
               </div>
             </div>
           </div>

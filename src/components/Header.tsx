@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import EnrollmentForm from "./EnrollmentForm";
 
 const Header = () => {
@@ -22,13 +23,13 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <img 
                 src="/lovable-uploads/66522418-2d3f-4f95-ad3f-5610e03d8c27.png" 
                 alt="Rise Up Academy" 
                 className="h-12 w-auto md:h-14"
               />
-            </div>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
