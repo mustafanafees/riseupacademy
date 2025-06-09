@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Shield, Users, MapPin, Heart, Camera, Car } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Features = () => {
   const facilities = [
@@ -38,6 +37,10 @@ const Features = () => {
       description: "Convenient location with multiple transportation options and parking availability"
     }
   ];
+
+  const handleVisitCampus = () => {
+    window.location.href = "/#contact";
+  };
 
   return (
     <div className="min-h-screen pt-20">
@@ -145,11 +148,13 @@ const Features = () => {
                   ensures easy accessibility for students from all parts of the city, while 
                   maintaining a secure and conducive learning environment.
                 </p>
-                <Link to="/#contact">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90">
-                    Visit Our Campus
-                  </Button>
-                </Link>
+                <Button 
+                  size="lg" 
+                  className="bg-primary hover:bg-primary/90"
+                  onClick={handleVisitCampus}
+                >
+                  Visit Our Campus
+                </Button>
               </CardContent>
             </Card>
           </div>
