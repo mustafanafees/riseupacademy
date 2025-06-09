@@ -1,5 +1,6 @@
 
 import { MapPin, Phone, Mail, Globe, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const handleMessageClick = () => {
@@ -48,10 +49,11 @@ const Footer = () => {
               </span>
             </h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Home</a></li>
-              <li><a href="#about" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">About Us</a></li>
-              <li><a href="#programs" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Programs</a></li>
-              <li><a href="#contact" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Contact</a></li>
+              <li><Link to="/#home" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Home</Link></li>
+              <li><Link to="/#about" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">About Us</Link></li>
+              <li><Link to="/#programs" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Programs</Link></li>
+              <li><Link to="/features" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Features</Link></li>
+              <li><Link to="/#contact" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Contact</Link></li>
             </ul>
           </div>
 
