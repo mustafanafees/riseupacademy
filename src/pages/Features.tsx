@@ -90,8 +90,8 @@ const Features = () => {
               </div>
               <div className="animate-slide-up">
                 <img 
-                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
-                  alt="Pakistani students engaged in quality education at Rise Up Academy" 
+                  src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                  alt="Quality education at Rise Up Academy" 
                   className="w-full h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
                 />
               </div>
