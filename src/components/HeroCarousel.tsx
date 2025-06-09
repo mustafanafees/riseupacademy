@@ -13,16 +13,16 @@ const HeroCarousel = () => {
       alt: "Students studying in classroom - Rise Up Academy"
     },
     {
-      src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      alt: "Programming and coding education"
+      src: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "High school classroom with desks and blackboard"
     },
     {
-      src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      alt: "Student using laptop for learning"
+      src: "https://images.unsplash.com/photo-1581726690015-c9861fa5057f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Students' hands writing notes in classroom"
     },
     {
-      src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      alt: "Programming workspace with code"
+      src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Group study session with books and notebooks"
     }
   ];
 

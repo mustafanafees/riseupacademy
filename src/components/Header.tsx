@@ -13,7 +13,7 @@ const Header = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Programs", href: "#programs" },
-    { name: "Features", href: "#features" },
+    { name: "Features", href: "/features" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -34,13 +34,23 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium"
-                >
-                  {item.name}
-                </a>
+                item.href.startsWith('/') ? (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="text-foreground hover:text-primary transition-colors font-medium"
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-foreground hover:text-primary transition-colors font-medium"
+                  >
+                    {item.name}
+                  </a>
+                )
               ))}
             </nav>
 
@@ -71,14 +81,25 @@ const Header = () => {
             <div className="md:hidden border-t border-border">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </a>
+                  item.href.startsWith('/') ? (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </a>
+                  )
                 ))}
                 <div className="px-3 py-2">
                   <Button 
