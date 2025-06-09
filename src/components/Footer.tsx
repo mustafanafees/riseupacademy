@@ -2,6 +2,10 @@
 import { MapPin, Phone, Mail, Globe, MessageCircle } from "lucide-react";
 
 const Footer = () => {
+  const handleMessageClick = () => {
+    window.open("sms:+923225508480", "_blank");
+  };
+
   return (
     <footer className="bg-navy text-navy-foreground py-8 lg:py-12">
       <div className="container mx-auto px-4">
@@ -16,16 +20,21 @@ const Footer = () => {
               />
             </div>
             <p className="text-navy-foreground/80 mb-4 text-sm lg:text-base">
-              Unlock Your Potential, Unleash Your Success.
+              <span className="bg-gradient-to-r from-navy-foreground to-navy-foreground/80 bg-clip-text text-transparent">
+                Unlock Your Potential, Unleash Your Success.
+              </span>
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-navy-foreground/60 hover:text-accent transition-colors">
                 <Globe className="h-4 w-4 lg:h-5 lg:w-5" />
               </a>
-              <a href="#" className="text-navy-foreground/60 hover:text-accent transition-colors">
+              <button 
+                onClick={handleMessageClick}
+                className="text-navy-foreground/60 hover:text-accent transition-colors"
+              >
                 <MessageCircle className="h-4 w-4 lg:h-5 lg:w-5" />
-              </a>
-              <a href="#" className="text-navy-foreground/60 hover:text-accent transition-colors">
+              </button>
+              <a href="mailto:riseupacademykhi@gmail.com" className="text-navy-foreground/60 hover:text-accent transition-colors">
                 <Mail className="h-4 w-4 lg:h-5 lg:w-5" />
               </a>
             </div>
@@ -33,19 +42,26 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4 text-sm lg:text-base">Quick Links</h3>
+            <h3 className="font-semibold mb-4 text-sm lg:text-base">
+              <span className="bg-gradient-to-r from-navy-foreground to-navy-foreground/80 bg-clip-text text-transparent">
+                Quick Links
+              </span>
+            </h3>
             <ul className="space-y-2">
               <li><a href="#home" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Home</a></li>
               <li><a href="#about" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">About Us</a></li>
               <li><a href="#programs" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Programs</a></li>
               <li><a href="#contact" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Contact</a></li>
-              <li><a href="#" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Admissions</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-4 text-sm lg:text-base">Contact Info</h3>
+            <h3 className="font-semibold mb-4 text-sm lg:text-base">
+              <span className="bg-gradient-to-r from-navy-foreground to-navy-foreground/80 bg-clip-text text-transparent">
+                Contact Info
+              </span>
+            </h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-1 text-accent" />
@@ -72,7 +88,7 @@ const Footer = () => {
 
         <div className="border-t border-navy-foreground/20 mt-6 lg:mt-8 pt-6 lg:pt-8 text-center">
           <p className="text-navy-foreground/60 text-xs lg:text-sm">
-            © 2024 Rise Up Academy. All rights reserved. | Empowering students to achieve excellence.
+            © 2025 Rise Up Academy. All rights reserved. | Empowering students to achieve excellence.
           </p>
         </div>
       </div>

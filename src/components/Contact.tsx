@@ -35,7 +35,8 @@ const Contact = () => {
       icon: MessageCircle,
       title: "WhatsApp",
       details: "0314 2013753",
-      color: "text-green-600"
+      color: "text-green-600",
+      action: () => window.open("https://wa.me/923142013753", "_blank")
     },
     {
       icon: Globe,
@@ -111,8 +112,10 @@ Submitted on: ${new Date().toLocaleString()}
           <Badge className="mb-4 bg-accent/10 text-accent border-accent/20">
             Get In Touch
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold text-navy mb-4">
-            Ready to <span className="text-primary">Rise Up</span>?
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
+              Ready to Rise Up?
+            </span>
           </h2>
           <p className="text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
             Contact us today to learn more about our programs and take the first step 
@@ -123,16 +126,28 @@ Submitted on: ${new Date().toLocaleString()}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Information */}
           <div className="animate-fade-in">
-            <h3 className="text-xl lg:text-2xl font-bold text-navy mb-6 lg:mb-8">Contact Information</h3>
+            <h3 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Contact Information
+              </span>
+            </h3>
             
             <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start space-x-3 lg:space-x-4">
+                <div 
+                  key={index} 
+                  className={`flex items-start space-x-3 lg:space-x-4 ${info.action ? 'cursor-pointer hover:bg-gray-100 p-2 rounded-lg transition-colors' : ''}`}
+                  onClick={info.action}
+                >
                   <div className={`${info.color} bg-gray-100 p-2 lg:p-3 rounded-lg`}>
                     <info.icon className="h-5 w-5 lg:h-6 lg:w-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-navy mb-1 text-sm lg:text-base">{info.title}</h4>
+                    <h4 className="font-semibold mb-1 text-sm lg:text-base">
+                      <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
+                        {info.title}
+                      </span>
+                    </h4>
                     <p className="text-muted-foreground text-sm lg:text-base">{info.details}</p>
                   </div>
                 </div>
@@ -140,13 +155,23 @@ Submitted on: ${new Date().toLocaleString()}
             </div>
 
             {/* Special Offer */}
-            <Card className="border-accent/20 bg-accent/5">
+            <Card className="border-accent/20 bg-gradient-to-br from-accent/5 to-primary/5">
               <CardHeader>
-                <CardTitle className="text-accent text-lg lg:text-xl">Special Admission Offer</CardTitle>
+                <CardTitle className="text-lg lg:text-xl">
+                  <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+                    Special Admission Offer
+                  </span>
+                </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">25% OFF</div>
-                <p className="text-navy font-semibold mb-2 text-sm lg:text-base">For 1st Batch of Students</p>
+                <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent mb-2">
+                  25% OFF
+                </div>
+                <p className="font-semibold mb-2 text-sm lg:text-base">
+                  <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
+                    For 1st Batch of Students
+                  </span>
+                </p>
                 <p className="text-xs lg:text-sm text-muted-foreground">
                   Limited time offer for new enrollments. Contact us now to secure your spot!
                 </p>
@@ -157,7 +182,11 @@ Submitted on: ${new Date().toLocaleString()}
           {/* Contact Form */}
           <Card className="animate-slide-up">
             <CardHeader>
-              <CardTitle className="text-xl lg:text-2xl text-navy">Send us a Message</CardTitle>
+              <CardTitle className="text-xl lg:text-2xl">
+                <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
+                  Send us a Message
+                </span>
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -200,7 +229,7 @@ Submitted on: ${new Date().toLocaleString()}
                 />
                 <Button 
                   type="submit" 
-                  className="w-full bg-primary hover:bg-primary/90"
+                  className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
@@ -214,15 +243,25 @@ Submitted on: ${new Date().toLocaleString()}
           </Card>
         </div>
 
-        {/* Map Placeholder */}
+        {/* Map Section */}
         <div className="mt-12 lg:mt-16 animate-fade-in">
-          <Card>
+          <Card className="overflow-hidden">
             <CardContent className="p-0">
-              <div className="bg-gradient-to-r from-primary/10 to-accent/10 h-48 lg:h-64 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-10 w-10 lg:h-12 lg:w-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-lg lg:text-xl font-semibold text-navy mb-2">Visit Our Campus</h3>
-                  <p className="text-muted-foreground text-sm lg:text-base">A-28 Block 16 Federal B Area, Karachi</p>
+              <div 
+                className="relative h-48 lg:h-64 bg-cover bg-center cursor-pointer group"
+                style={{
+                  backgroundImage: `url(https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)`
+                }}
+                onClick={() => window.open("https://maps.app.goo.gl/wRk9LJoytTXVc7qn6", "_blank")}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent group-hover:from-navy/70 transition-colors" />
+                <div className="absolute inset-0 flex items-center justify-center text-center">
+                  <div>
+                    <MapPin className="h-10 w-10 lg:h-12 lg:w-12 text-white mx-auto mb-4" />
+                    <h3 className="text-lg lg:text-xl font-semibold text-white mb-2">Visit Our Campus</h3>
+                    <p className="text-white/90 text-sm lg:text-base">A-28 Block 16 Federal B Area, Karachi</p>
+                    <p className="text-white/70 text-xs lg:text-sm mt-2">Click to view on Google Maps</p>
+                  </div>
                 </div>
               </div>
             </CardContent>

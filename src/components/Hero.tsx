@@ -1,8 +1,9 @@
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Star, Users } from "lucide-react";
+import { Star, Users } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -32,8 +33,13 @@ const Hero = () => {
             </Badge>
             
             <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-navy leading-tight mb-4 lg:mb-6">
-              Unlock Your Potential,{" "}
-              <span className="text-primary">Unleash Your Success</span>
+              <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
+                Unlock Your Potential,
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Unleash Your Success
+              </span>
             </h1>
             
             <p className="text-base lg:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed">
@@ -43,13 +49,11 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6 lg:mb-8">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 animate-pulse">
-                <GraduationCap className="mr-2 h-5 w-5" />
-                Start Your Journey
-              </Button>
-              <Button size="lg" variant="outline" className="hover-scale">
-                Learn More
-              </Button>
+              <Link to="/features">
+                <Button size="lg" variant="outline" className="hover-scale bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 hover:border-primary/40">
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
 
