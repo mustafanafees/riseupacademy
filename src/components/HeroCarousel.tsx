@@ -9,20 +9,20 @@ const HeroCarousel = () => {
 
   const educationImages = [
     {
-      src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
-      alt: "Modern white concrete educational building"
+      src: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
+      alt: "Traditional classroom with desks and blackboard"
     },
     {
-      src: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
-      alt: "Bottom view of modern glass educational building"
+      src: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
+      alt: "Empty classroom with wooden desks and chairs"
     },
     {
-      src: "https://images.unsplash.com/photo-1473177104440-ffee2f376098?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
-      alt: "Interior of educational institution with architectural details"
+      src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
+      alt: "Classic classroom interior with blackboard and student desks"
     },
     {
-      src: "https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
-      alt: "White concrete modern educational building"
+      src: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
+      alt: "Modern classroom with whiteboard and arranged desks"
     }
   ];
 
