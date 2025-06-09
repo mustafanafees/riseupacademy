@@ -9,20 +9,20 @@ const HeroCarousel = () => {
 
   const educationImages = [
     {
-      src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      alt: "Students studying in classroom - Rise Up Academy"
+      src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Modern white concrete educational building"
     },
     {
-      src: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      alt: "High school classroom with desks and blackboard"
+      src: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Bottom view of modern glass educational building"
     },
     {
-      src: "https://images.unsplash.com/photo-1581726690015-c9861fa5057f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      alt: "Students' hands writing notes in classroom"
+      src: "https://images.unsplash.com/photo-1473177104440-ffee2f376098?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "Interior of educational institution with architectural details"
     },
     {
-      src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      alt: "Group study session with books and notebooks"
+      src: "https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      alt: "White concrete modern educational building"
     }
   ];
 
