@@ -33,12 +33,12 @@ const Hero = () => {
               🎓 Admission Open - 25% OFF for 1st Batch
             </Badge>
             
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-navy leading-tight mb-4 lg:mb-6">
-              <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold leading-tight mb-4 lg:mb-6">
+              <span className="text-primary">
                 Unlock Your Potential,
               </span>
               <br />
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="text-primary">
                 Unleash Your Success
               </span>
             </h1>
@@ -51,7 +51,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6 lg:mb-8">
               <Link to="/features">
-                <Button size="lg" variant="outline" className="hover-scale bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 hover:border-primary/40">
+                <Button size="lg" className="hover-scale bg-primary text-primary-foreground hover:bg-primary/90">
                   Learn More
                 </Button>
               </Link>

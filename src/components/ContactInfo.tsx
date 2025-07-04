@@ -38,10 +38,8 @@ const ContactInfo = () => {
 
   return (
     <div className="animate-fade-in">
-      <h3 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8">
-        <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          Contact Information
-        </span>
+      <h3 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-8 text-primary">
+        Contact Information
       </h3>
       
       <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8">
@@ -55,10 +53,8 @@ const ContactInfo = () => {
               <info.icon className="h-5 w-5 lg:h-6 lg:w-6" />
             </div>
             <div>
-              <h4 className="font-semibold mb-1 text-sm lg:text-base">
-                <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
-                  {info.title}
-                </span>
+              <h4 className="font-semibold mb-1 text-sm lg:text-base text-primary">
+                {info.title}
               </h4>
               <p className="text-muted-foreground text-sm lg:text-base">{info.details}</p>
             </div>

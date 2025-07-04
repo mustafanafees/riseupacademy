@@ -14,10 +14,8 @@ const Contact = () => {
           <Badge className="mb-4 bg-accent/10 text-accent border-accent/20">
             Get In Touch
           </Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
-              Ready to Rise Up?
-            </span>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-primary">
+            Ready to Rise Up?
           </h2>
           <p className="text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
             Contact us today to learn more about our programs and take the first step 

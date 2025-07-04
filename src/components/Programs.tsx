@@ -62,7 +62,7 @@ const Programs = () => {
           <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
             Academic Programs
           </Badge>
-          <h2 className="text-4xl font-bold text-navy mb-4">
+          <h2 className="text-4xl font-bold text-primary mb-4">
             Classes For
           </h2>
           <div className="text-6xl md:text-8xl font-black text-navy mb-6">
@@ -98,7 +98,7 @@ const Programs = () => {
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <feature.icon className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="font-semibold text-navy mb-2">{feature.title}</h3>
+              <h3 className="font-semibold text-primary mb-2">{feature.title}</h3>
               <p className="text-sm text-muted-foreground">{feature.description}</p>
             </div>
           ))}

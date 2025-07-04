@@ -25,14 +25,8 @@ const About = () => {
               About Rise Up Academy
             </Badge>
             
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 lg:mb-6">
-              <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
-                Empowering Students to Rise Up
-              </span>
-              {" "}and{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Succeed
-              </span>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-primary">
+              Empowering Students to Rise Up and Succeed
             </h2>
             
             <p className="text-base lg:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed">
@@ -67,10 +61,8 @@ const About = () => {
                 <CardContent className="p-4 lg:p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="font-bold text-sm lg:text-base">
-                        <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
-                          New Batches Starting Soon
-                        </span>
+                      <h3 className="font-bold text-sm lg:text-base text-primary">
+                        New Batches Starting Soon
                       </h3>
                       <p className="text-xs lg:text-sm text-muted-foreground">25% OFF for first batch students</p>
                     </div>
