@@ -7,32 +7,32 @@ const ContactInfo = () => {
       icon: MapPin,
       title: "Address",
       details: "A-28 Block 16 Federal B Area, Karachi",
-      color: "text-primary"
+      color: "text-orange-500"
     },
     {
       icon: Phone,
       title: "Phone",
       details: "0322 3508480 | 0332 2273193",
-      color: "text-accent"
+      color: "text-orange-500"
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
       details: "0314 2013753",
-      color: "text-green-600",
+      color: "text-orange-500",
       action: () => window.open("https://wa.me/923142013753", "_blank")
     },
     {
       icon: Globe,
       title: "Website",
       details: "www.riseup.academy",
-      color: "text-navy"
+      color: "text-orange-500"
     },
     {
       icon: Mail,
       title: "Email",
       details: "riseupacademykhi@gmail.com",
-      color: "text-primary"
+      color: "text-orange-500"
     }
   ];
 

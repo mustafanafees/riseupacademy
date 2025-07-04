@@ -73,6 +73,12 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-2">
+                <MessageCircle className="h-4 w-4 mt-1 text-accent" />
+                <span className="text-xs lg:text-sm text-navy-foreground/80">
+                  0314 2013753 (WhatsApp)
+                </span>
+              </div>
+              <div className="flex items-start space-x-2">
                 <Mail className="h-4 w-4 mt-1 text-accent" />
                 <span className="text-xs lg:text-sm text-navy-foreground/80">
                   riseupacademykhi@gmail.com

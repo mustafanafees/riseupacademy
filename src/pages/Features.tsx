@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Shield, Users, MapPin, Heart, Camera, Car } from "lucide-react";
+import MapSection from "@/components/MapSection";
 
 const Features = () => {
   const facilities = [
@@ -143,6 +144,9 @@ const Features = () => {
                 >
                   Visit Our Campus
                 </Button>
+                
+                {/* Map Section */}
+                <MapSection />
               </CardContent>
             </Card>
           </div>
