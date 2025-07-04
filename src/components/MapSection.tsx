@@ -14,7 +14,7 @@ const MapSection = () => {
             }}
             onClick={() => window.open("https://maps.app.goo.gl/wRk9LJoytTXVc7qn6", "_blank")}
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent group-hover:from-navy/70 transition-colors" />
+            <div className="absolute inset-0 bg-navy/60 group-hover:bg-navy/70 transition-colors" />
             <div className="absolute inset-0 flex items-center justify-center text-center">
               <div>
                 <MapPin className="h-10 w-10 lg:h-12 lg:w-12 text-white mx-auto mb-4" />

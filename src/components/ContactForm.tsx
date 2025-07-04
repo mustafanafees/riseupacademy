@@ -71,10 +71,8 @@ Submitted on: ${new Date().toLocaleString()}
   return (
     <Card className="animate-slide-up">
       <CardHeader>
-        <CardTitle className="text-xl lg:text-2xl">
-          <span className="bg-gradient-to-r from-navy to-primary bg-clip-text text-transparent">
-            Send us a Message
-          </span>
+        <CardTitle className="text-xl lg:text-2xl text-primary">
+          Send us a Message
         </CardTitle>
       </CardHeader>
       <CardContent>
@@ -118,7 +116,7 @@ Submitted on: ${new Date().toLocaleString()}
           />
           <Button 
             type="submit" 
-            className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90"
+            className="w-full"
             disabled={isSubmitting}
           >
             {isSubmitting ? "Sending..." : "Send Message"}

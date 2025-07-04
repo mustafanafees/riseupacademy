@@ -19,7 +19,7 @@ const Hero = () => {
     <section id="home" className="pt-20 pb-16 min-h-screen flex items-center relative overflow-hidden">
       {/* Parallax Background */}
       <div 
-        className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"
+        className="absolute inset-0 bg-primary/5"
         style={{
           transform: `translateY(${scrollY * 0.5}px)`,
         }}

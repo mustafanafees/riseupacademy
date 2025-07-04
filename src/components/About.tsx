@@ -66,7 +66,7 @@ const About = () => {
                       </h3>
                       <p className="text-xs lg:text-sm text-muted-foreground">25% OFF for first batch students</p>
                     </div>
-                    <Badge className="bg-gradient-to-r from-accent to-primary text-accent-foreground text-xs">
+                    <Badge className="bg-accent text-accent-foreground text-xs">
                       Limited Time
                     </Badge>
                   </div>
@@ -85,7 +85,7 @@ const About = () => {
                 alt="Mathematics class" 
                 className="w-full h-48 lg:h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
+              <div className="absolute inset-0 bg-navy/60" />
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="font-semibold text-sm lg:text-base">Mathematics Excellence</h3>
                 <p className="text-xs lg:text-sm opacity-90">Problem-solving focused approach</p>
@@ -98,7 +98,7 @@ const About = () => {
                 alt="Science laboratory" 
                 className="w-full h-48 lg:h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
+              <div className="absolute inset-0 bg-navy/60" />
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="font-semibold text-sm lg:text-base">Science Laboratory</h3>
                 <p className="text-xs lg:text-sm opacity-90">Hands-on experiments & learning</p>
@@ -111,7 +111,7 @@ const About = () => {
                 alt="Interactive classroom" 
                 className="w-full h-48 lg:h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
+              <div className="absolute inset-0 bg-navy/60" />
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="font-semibold text-sm lg:text-base">Interactive Learning</h3>
                 <p className="text-xs lg:text-sm opacity-90">Modern teaching methods</p>

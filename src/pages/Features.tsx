@@ -45,17 +45,14 @@ const Features = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Header */}
-      <section className="py-16 lg:py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+      <section className="py-16 lg:py-20 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="text-center animate-fade-in">
             <Badge className="mb-4 lg:mb-6 bg-accent/10 text-accent border-accent/20">
               Our Features & Facilities
             </Badge>
-            <h1 className="text-3xl lg:text-5xl font-bold text-navy mb-4 lg:mb-6">
-              Quality Education with{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Excellence
-              </span>
+            <h1 className="text-3xl lg:text-5xl font-bold text-primary mb-4 lg:mb-6">
+              Quality Education with Excellence
             </h1>
             <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               At Rise Up Academy, we are committed to providing quality education in a safe, 
@@ -73,11 +70,8 @@ const Features = () => {
           <div className="mb-16 lg:mb-20">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="animate-fade-in">
-                <h2 className="text-2xl lg:text-3xl font-bold text-navy mb-4 lg:mb-6">
-                  Our Focus on{" "}
-                  <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Quality Education
-                  </span>
+                <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-4 lg:mb-6">
+                  Our Focus on Quality Education
                 </h2>
                 <p className="text-base lg:text-lg text-muted-foreground mb-6 leading-relaxed">
                   Rise Up Academy believes that quality education is the foundation of success. 
@@ -104,11 +98,8 @@ const Features = () => {
           {/* Facilities Grid */}
           <div className="mb-16 lg:mb-20">
             <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-2xl lg:text-3xl font-bold text-navy mb-4">
-                Our{" "}
-                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  Facilities
-                </span>
+              <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-4">
+                Our Facilities
               </h2>
               <p className="text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
                 Modern amenities and thoughtful design create the perfect learning environment
@@ -120,7 +111,7 @@ const Features = () => {
                 <Card key={index} className="hover:shadow-lg transition-shadow duration-300 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4 mb-4">
-                      <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-3 rounded-lg">
+                      <div className="bg-primary/10 p-3 rounded-lg">
                         <facility.icon className="h-6 w-6 text-primary" />
                       </div>
                       <h3 className="font-semibold text-navy text-lg">{facility.title}</h3>
@@ -134,13 +125,10 @@ const Features = () => {
 
           {/* Location Advantages */}
           <div className="text-center">
-            <Card className="bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20">
+            <Card className="bg-primary/5 border-primary/20">
               <CardContent className="p-8 lg:p-12">
-                <h2 className="text-2xl lg:text-3xl font-bold text-navy mb-4 lg:mb-6">
-                  Prime{" "}
-                  <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Location
-                  </span>
+                <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-4 lg:mb-6">
+                  Prime Location
                 </h2>
                 <p className="text-base lg:text-lg text-muted-foreground mb-6 lg:mb-8 max-w-3xl mx-auto leading-relaxed">
                   Located in the heart of Federal B Area, Karachi, our academy is strategically 

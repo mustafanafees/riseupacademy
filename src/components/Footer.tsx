@@ -21,9 +21,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-navy-foreground/80 mb-4 text-sm lg:text-base">
-              <span className="bg-gradient-to-r from-navy-foreground to-navy-foreground/80 bg-clip-text text-transparent">
-                Unlock Your Potential, Unleash Your Success.
-              </span>
+              Unlock Your Potential, Unleash Your Success.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-navy-foreground/60 hover:text-accent transition-colors">
@@ -43,10 +41,8 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4 text-sm lg:text-base">
-              <span className="bg-gradient-to-r from-navy-foreground to-navy-foreground/80 bg-clip-text text-transparent">
-                Quick Links
-              </span>
+            <h3 className="font-semibold mb-4 text-sm lg:text-base text-navy-foreground">
+              Quick Links
             </h3>
             <ul className="space-y-2">
               <li><Link to="/#home" className="text-navy-foreground/80 hover:text-accent transition-colors text-sm lg:text-base">Home</Link></li>
@@ -59,10 +55,8 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-4 text-sm lg:text-base">
-              <span className="bg-gradient-to-r from-navy-foreground to-navy-foreground/80 bg-clip-text text-transparent">
-                Contact Info
-              </span>
+            <h3 className="font-semibold mb-4 text-sm lg:text-base text-navy-foreground">
+              Contact Info
             </h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-2">

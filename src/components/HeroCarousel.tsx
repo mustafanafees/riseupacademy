@@ -55,7 +55,7 @@ const HeroCarousel = () => {
             <CarouselItem key={index}>
               <Card className="border-0 shadow-none">
                 <CardContent className="p-0">
-                  <div className="relative bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl p-6 lg:p-8 overflow-hidden">
+                  <div className="relative bg-primary/10 rounded-3xl p-6 lg:p-8 overflow-hidden">
                     <img 
                       src={image.src}
                       alt={image.alt}
