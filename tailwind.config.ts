@@ -59,6 +59,8 @@ export default {
 				}
 			},
 			fontFamily: {
+				'inter': ['Inter', 'system-ui', 'sans-serif'],
+				'manrope': ['Manrope', 'system-ui', 'sans-serif'],
 				'gabarito': ['Gabarito', 'sans-serif']
 			},
 			borderRadius: {
