@@ -241,7 +241,7 @@
     @apply text-sm leading-normal;
   }
 
-  .text-xs {
+  .text-tiny {
     @apply text-xs leading-tight;
   }
 
