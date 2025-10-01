@@ -11,11 +11,11 @@ const Header = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Home", href: "/#home", anchor: "home" },
-    { name: "About", href: "/#about", anchor: "about" },
-    { name: "Programs", href: "/#programs", anchor: "programs" },
+    { name: "Home", href: "/", anchor: "home" },
+    { name: "About", href: "/", anchor: "about" },
+    { name: "Programs", href: "/", anchor: "programs" },
     { name: "Features", href: "/features", anchor: null },
-    { name: "Contact", href: "/#contact", anchor: "contact" },
+    { name: "Contact", href: "/", anchor: "contact" },
   ];
 
   const handleNavClick = (item: { name: string; href: string; anchor: string | null }) => {
