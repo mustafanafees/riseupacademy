@@ -27,8 +27,6 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					light: 'hsl(var(--primary-light))',
-					dark: 'hsl(var(--primary-dark))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
@@ -45,22 +43,11 @@ export default {
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					light: 'hsl(var(--accent-light))',
-					dark: 'hsl(var(--accent-dark))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				navy: {
 					DEFAULT: 'hsl(var(--navy))',
-					light: 'hsl(var(--navy-light))',
 					foreground: 'hsl(var(--navy-foreground))'
-				},
-				success: {
-					DEFAULT: 'hsl(var(--success))',
-					foreground: 'hsl(var(--success-foreground))'
-				},
-				warning: {
-					DEFAULT: 'hsl(var(--warning))',
-					foreground: 'hsl(var(--warning-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -68,14 +55,10 @@ export default {
 				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
-					secondary: 'hsl(var(--card-secondary))',
-					hover: 'hsl(var(--card-hover))',
 					foreground: 'hsl(var(--card-foreground))'
 				}
 			},
 			fontFamily: {
-				'inter': ['Inter', 'system-ui', 'sans-serif'],
-				'manrope': ['Manrope', 'system-ui', 'sans-serif'],
 				'gabarito': ['Gabarito', 'sans-serif']
 			},
 			borderRadius: {
