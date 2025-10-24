@@ -15,7 +15,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/lovable-uploads/66522418-2d3f-4f95-ad3f-5610e03d8c27.png" 
+                src={`${import.meta.env.BASE_URL}lovable-uploads/66522418-2d3f-4f95-ad3f-5610e03d8c27.png`}
                 alt="Rise Up Academy" 
                 className="h-10 w-auto md:h-12 brightness-0 invert"
               />
