@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
+      <header className="fixed top-0 w-full glass border-b border-border/50 z-50 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -80,7 +80,7 @@ const Header = () => {
             {/* CTA Button */}
             <div className="hidden md:flex">
               <Button 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground"
+                className="gradient-accent text-white shadow-lg hover:shadow-xl transition-all"
                 onClick={() => setIsEnrollmentFormOpen(true)}
               >
                 Enroll Now
@@ -121,7 +121,7 @@ const Header = () => {
                 ))}
                 <div className="px-3 py-2">
                   <Button 
-                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                    className="w-full gradient-accent text-white shadow-lg"
                     onClick={() => {
                       setIsMenuOpen(false);
                       setIsEnrollmentFormOpen(true);

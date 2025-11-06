@@ -55,11 +55,14 @@ const Programs = () => {
   ];
 
   return (
-    <section id="programs" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section id="programs" className="py-20 bg-gradient-to-b from-background to-muted/30 relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+      <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
+          <Badge className="mb-4 bg-gradient-to-r from-primary/10 to-accent/10 text-primary border-primary/20 shadow-md">
             Academic Programs
           </Badge>
           <h2 className="text-4xl font-bold text-primary mb-4">
@@ -77,9 +80,9 @@ const Programs = () => {
         {/* Programs Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {programs.map((program, index) => (
-            <Card key={program.grade} className="animate-slide-up border-0 shadow-lg hover:shadow-xl transition-shadow">
+            <Card key={program.grade} className="animate-slide-up border-0 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 bg-card/80 backdrop-blur">
               <CardHeader>
-                <div className={`${program.color} text-white text-4xl font-bold rounded-lg w-16 h-16 flex items-center justify-center mb-4`}>
+                <div className={`${program.color} text-white text-4xl font-bold rounded-2xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg`}>
                   {program.grade}
                 </div>
                 <CardTitle className="text-xl text-navy">{program.title}</CardTitle>
@@ -94,8 +97,8 @@ const Programs = () => {
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
-            <div key={index} className="text-center animate-fade-in">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <div key={index} className="text-center animate-fade-in group">
+              <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
                 <feature.icon className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-semibold text-primary mb-2">{feature.title}</h3>
